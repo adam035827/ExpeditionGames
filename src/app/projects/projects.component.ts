@@ -15,6 +15,12 @@ export class ProjectsComponent implements OnInit {
     '/assets/HighresScreenshot00010.png'
   ];
 
+  aloneDesc = '"Alone" VR, a space adventure experience is in development for the Oculus store. Pilot your very own star' +
+    'ship and explore various parts of the cosmos. Shoot down remnants of war as you traverse through asteroid fields. Harness' +
+    'the elements of the universe and find your way back home."Alone" VR, a space adventure experience is in development for' +
+    'the Oculus store. Pilot your very own star ship and explore various parts of the cosmos. Shoot down remnants of war as you' +
+    'traverse through asteroid fields. Harness the elements of the universe and find your way back home.';
+
   constructor() { }
 
   ngOnInit() { }
