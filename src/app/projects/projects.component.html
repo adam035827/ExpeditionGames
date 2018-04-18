@@ -2,12 +2,12 @@
   <h1 class="text-padding">PROJECTS</h1>
   <h2>"Alone" VR Experience</h2>
     <h3>Developed for Oculus</h3>
-    <slideshow [height]="height"
+    <slideshow
            [minHeight]="'525px'"
            [autoPlay]="true"
            [showArrows]="true"
            [imageUrls]="imageArray"
-           [lazyLoad]="imageSources?.length > 1"
+           [lazyLoad]="imageArray?.length > 1"
            [autoPlayWaitForLazyLoad]="true">
 </slideshow>
 <h4 class="text-padding">{{aloneDesc}}</h4>
