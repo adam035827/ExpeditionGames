@@ -6,9 +6,21 @@
            [minHeight]="'525px'"
            [autoPlay]="true"
            [showArrows]="true"
-           [imageUrls]="imageArray"
-           [lazyLoad]="imageArray?.length > 1"
+           [imageUrls]="aloneImageArray"
+           [lazyLoad]="aloneImageArray?.length > 1"
            [autoPlayWaitForLazyLoad]="true">
 </slideshow>
 <h4 class="text-padding">{{aloneDesc}}</h4>
+<br/>
+<h2>Vacation Survival Thing</h2>
+    <h3>Developed for Oculus</h3>
+    <slideshow
+           [minHeight]="'525px'"
+           [autoPlay]="true"
+           [showArrows]="true"
+           [imageUrls]="vacationSurvivalImageArray"
+           [lazyLoad]="vacationSurvivalImageArray?.length > 1"
+           [autoPlayWaitForLazyLoad]="true">
+</slideshow>
+<h4 class="text-padding">{{vacationDesc}}</h4>
 </div>
