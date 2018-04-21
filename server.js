@@ -3,8 +3,6 @@ const app = express();
 const path = require('path');
 var nodemailer = require('nodemailer');
 
-console.log('called server.js');
-
 app.use(express.static(__dirname + '/dist'));
 
 app.listen(process.env.PORT || 8080);
@@ -16,12 +14,10 @@ app.get('/*', function (req, res) {
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'adam035827@gmail.com',
-      pass: 'Linkin12'
+      user: 'ExpeditionGames2018@gmail.com',
+      pass: 'I ate the peanut'
     }
   });
-  
-  console.log('created transport');
 
   var mailOptions = {
     from: 'adam035827@gmail.com',
@@ -37,6 +33,4 @@ var transporter = nodemailer.createTransport({
       console.log('Email sent: ' + info.response);
     }
   });
-
-  console.log('sent mail');
 
